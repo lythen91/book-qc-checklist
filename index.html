@@ -4,9 +4,83 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <title>Baba Yaga Book Listings</title>
+  <title>Book QC Checklist</title>
 </head>
 <body>
-  
+  <h1>Book QC Checlist</h1>
+  <div class="form-container">
+    <!-- LEFT SIDE -->
+    <div class="inputs-panel">
+      <h2>Inputs</h2>
+      <label>
+        Book Title/ISBN:
+        <input type="text" id="book-title-input">
+      </label>
+      <label>
+        Checked by:
+        <input type="text" id="checked-by-input">
+      </label>
+      <label>
+        Date:
+        <input type="text" id="date-input">
+      </label>
+      <label>
+        Weight:
+        <input type="text" id="weight-input">
+      </label>
+      <label>
+        SKU:
+        <input type="text" id="sku-input">
+      </label>
+
+      <fieldset>
+        <legend>1. Smell & Contamination</legend>
+        <label>
+          <input type="checkbox" id="no-odour">
+          No odour
+        </label>
+        <label>
+          <input type="checkbox" id="slightly-musty">
+          Slightly musty
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>2. Binding & Structure</legend>
+        <label>
+          <input type="checkbox" id="title-binding">
+          Tight
+        </label>
+        <label>
+          <input type="checkbox" id="slightly-loose-binding">
+          Slightly loose
+        </label>
+        <label>
+          <input type="checkbox" id="loose-pages-binding">
+          Loose pages
+        </label>
+        <label>
+          <input type="checkbox" id="detatched-boards-binding">
+          Detatched boards
+        </label>
+        <label>
+          <input type="checkbox" id="missing-pages-binding">
+          Missing pages
+        </label>
+        <label>
+          <input type="checkbox" id="taped-binding">
+          Taped binding
+        </label>
+      </fieldset>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="output-panel">
+      <h2>Listing Text</h2>
+
+      <textarea id="outputText" readonly></textarea>
+
+      <button id="copyButton">Copy to Clipboard</button>
+    </div>
+  </div>
 </body>
 </html>
